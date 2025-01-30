@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // Servir archivos estáticos (como index.html)
-app.use(express.static(__dirname));
+app.use(express.static('public'));
 
 app.use('/usuarios', usuariosRoutes);
 
